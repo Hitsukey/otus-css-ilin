@@ -5,9 +5,9 @@
 
 - [x] Заполнить раздел «О себе»
 - [x] Введение в Web
-- [ ] Version Control
+- [x] Version Control
 - [ ] Основы HTML, семантичность
-- [ ] Основы CSS
+- [x] Основы CSS
 - [ ] Типографика
 - [ ] Box model в деталях
 - [ ] Selector priority
