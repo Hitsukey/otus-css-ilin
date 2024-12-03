@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Regular"),
+    url("/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: local("Bitter Regular"),
+    url("/fonts/Bitter/Bitter-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay Regular"),
+    url("/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Базовые стили */
+body {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Roboto */
+
+/* Выделяющийся заголовок в разделе */
+.mainMenu a {
+  font-weight: 500;
+  text-align: center;
+  text-decoration-style: solid;
+}
+
+/* Выделяющийся заголовок в разделе */
+.mainMenu a:hover {
+  text-decoration-line: underline;
+}
+
+
+/* Playfair Display */
+
+/* Выделяющийся заголовок в разделе */
+.bigTitle {
+  font-family: "Playfair Display";
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 103.2px;
+}
+
+/* Логотип в header */
+.logoInHeader {
+  font-weight: 600;
+}
+
+/* Логотип-заголовок раздела */
+.logoInTitle {
+  text-align: center;
+}
+
+/* Подзаголовок под логотипом-заголовком раздела */
+.logoInTitleDescription {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+}
+
+/* Заголовок секции со смещением вправо */
+.sectionTitleRight {
+  text-align: right;
+}
+
+/* ФИО в заголовке раздела про арт-директора */
+.artDirectorTitle {
+  line-height: 114.64px;
+}
+
+/* Описание в подзаголовке раздела про арт-директора */
+.artDirectorSubtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+
+/* Крупный текст в секции сильных сторон */
+.strengthsTitle {
+  line-height: 86px;
+}
+
+/* Стили для мелкого описания под карточками */
+.smallDescription {
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+/* Контакты в футере */
+.footerContacts {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+/* Лого в футере */
+.footerLogo {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  text-align: center;
+}
+
+/* Pricing в футере */
+.footerPricing {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: right;
+}
+
+
+/* Bitter */
+
+/* Цитата */
+.quote {
+  font-family: "Bitter";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.2px;
+}
+
+.quote.bigCenterQuote {
+  font-size: 32px;
+  line-height: 38.4px;
+  text-align: center;
+}
+
+/* Пункты из списка */
+.strengthsUnorderedList {
+  font-family: "Bitter";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.8px;
+}

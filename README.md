@@ -8,7 +8,7 @@
 - [x] Version Control
 - [x] Основы HTML, семантичность
 - [x] Основы CSS
-- [ ] Типографика
+- [x] Типографика
 - [ ] Box model в деталях
 - [ ] Selector priority
 - [ ] Консультация по ДЗ
