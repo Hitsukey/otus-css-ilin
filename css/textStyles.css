@@ -23,19 +23,19 @@
 }
 
 /* Базовые стили */
-body {
+.bodyDefaultStyle {
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
 }
 
-a {
+.aBasicDecoration {
   text-decoration-line: none;
   color: black;
 }
 
-ul {
+.ulBasicDecoration {
   list-style-type: none;
 }
 
