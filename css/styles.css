@@ -1,3 +1,4 @@
+/* Подключение шрифтов */
 @font-face {
   font-family: "Roboto";
   src: local("Roboto Regular"),
@@ -50,12 +51,13 @@
   align-items: center;
 }
 
+/* heroSection */
 .heroSection {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 630px;
-  background-color: wheat;
+  background-color: #ddd0c8;
   background-image: url('..\\images\\insideWeather.jpg');
 }
 
@@ -66,6 +68,40 @@
   width: 690px;
   height: 360px;
   background-color: white;
+}
+
+/* biographySection */
+.biographySection {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 80%;
+  margin: 150px auto;
+}
+
+.biographySectionImg {
+  width: 49%;
+  object-fit: cover;
+}
+
+.biographySectionContent {
+  width: 39%;
+}
+
+.biographySectionTitle {
+  flex-grow: 1;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.biographySectionTitleText {
+  transform: rotate(-180deg);
+  text-align: right;
+  font-size: 24px;
+}
+
+.biographySectionQuote {
+  vertical-align: bottom;
+  margin: 0;
 }
 
 /* Список с пунктами главного меню */

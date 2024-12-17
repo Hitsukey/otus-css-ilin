@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/textStyles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Учебный проект</title>
 </head>
 <body class="bodyDefaultStyle">
@@ -12,17 +12,11 @@
         <nav class="mainMenu">
             <strong class="bigTitle logoInHeader">Mod</strong>
             <div class="mainMenuList">
-                <a href="#">Biography</a>
-                <a href="#">Designers</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Strong points</a>
+                <a class="aBasicDecoration" href="#">Biography</a>
+                <a class="aBasicDecoration" href="#">Designers</a>
+                <a class="aBasicDecoration" href="#">Testimonials</a>
+                <a class="aBasicDecoration" href="#">Strong points</a>
             </div>
-            <!-- <ul class="mainMenuList">
-                <li><a href="#">Biography</a></li>
-                <li><a href="#">Designers</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Strong points</a></li>
-            </ul> -->
         </nav>
     </header>
 
@@ -32,20 +26,27 @@
             <h1 class="bigTitle logoInTitle"><strong>Mod Studio</strong></h1>
             <h2 class="logoInTitleDescription">Modern Web Studio</h2>
         </div>
-        <!-- <img src="images\insideWeather.jpg" alt="insideWeather"> -->
     </section>
 
     <!-- Biography section -->
-    <section>
-        <h2 class="sectionTitleRight">Biography</h2>
-        <img src="images\jaredWeiss.jpg" alt="jaredWeiss">
-        <div>
-            <p class="bigTitle artDirectorTitle"><b>Katya Mills</b></p>
-            <p class="artDirectorSubtitle">Art Director</p>
-            <p>Scenography / Styling / Creative Photography / Design</p>
+    <section class="biographySection">
+        <img class="biographySectionImg" src="images\jaredWeiss.jpg" alt="jaredWeiss">
+            
+        <div class="biographySectionTitle">
+            <h2 class="biographySectionTitleText sectionTitleRight">Biography</h2>
+        </div>
+            
+        <div class="biographySectionContent">
+            
+            <p class="bigTitle artDirectorTitle">
+                <b>Katya<br>Mills</b>
+            </p>
+
+            <p class="artDirectorSubtitle">Art Director<br>Scenography / Styling / Creative Photography / Design</p>
+            
             <div>
                 <img src="images\rectangle.jpg" alt="rectangle">
-                <blockquote class="quote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
+                <blockquote class="quote biographySectionQuote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
             </div>
         </div>
     </section>
