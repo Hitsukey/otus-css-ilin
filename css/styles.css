@@ -27,7 +27,6 @@
 .bodyDefaultStyle {
   font-family: "Roboto";
   font-size: 24px;
-  font-weight: 700;
   line-height: 28.13px;
   max-width: 1440px;
   margin: 0 auto;
@@ -49,6 +48,10 @@
   padding-right: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.sectionDefault {
+  margin: 150px auto;
 }
 
 /* heroSection */
@@ -75,7 +78,6 @@
   display: flex;
   box-sizing: border-box;
   max-width: 80%;
-  margin: 150px auto;
 }
 
 .biographySectionImg {
@@ -102,6 +104,79 @@
 .biographySectionQuote {
   vertical-align: bottom;
   margin: 0;
+}
+
+/* testimonialsSection */
+.testimonialsSection {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  grid-gap: 20px;
+}
+
+.testimonialsSectionLeftPart {
+  grid-column: 2 / span 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-gap: 20px;
+}
+
+.testimonialsSectionLeftPartLinks {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px 0;
+  align-items: flex-end;
+  gap: 70px;
+}
+
+.testimonialsSectionLeftPartLink {
+  flex-grow: 1;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(-180deg);
+  width: 50%;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+
+.testimonialsSectionLeftPartImg {
+  grid-column: 2 / span 4;
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonialsSectionTitle {
+  flex-grow: 1;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.testimonialsSectionTitleText {
+  margin: 0;
+  transform: rotate(-180deg);
+  text-align: right;
+  font-size: 24px;
+}
+
+.testimonialsSectionRightPart {
+  grid-column: 8 / span 4;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  padding: 0 115px;
+}
+
+.testimonialsSectionRightPartQuote {
+  vertical-align: bottom;
+  margin: 0;
+  font-family: "Bitter";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  text-align: center;
 }
 
 /* Список с пунктами главного меню */
@@ -221,12 +296,6 @@
   font-size: 26px;
   font-weight: 400;
   line-height: 31.2px;
-}
-
-.quote.bigCenterQuote {
-  font-size: 32px;
-  line-height: 38.4px;
-  text-align: center;
 }
 
 /* Пункты из списка */
