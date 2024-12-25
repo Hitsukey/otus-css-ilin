@@ -54,10 +54,6 @@
   margin: 150px auto;
 }
 
-.uppercaseText {
-  text-transform: uppercase;
-}
-
 /* heroSection */
 .heroSection {
   display: flex;
@@ -181,44 +177,6 @@
   font-weight: 400;
   line-height: 38.4px;
   text-align: center;
-}
-
-/* designersSection */
-.designersSection {
-  margin-left: 20px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 30px;
-}
-
-.designersSectionTitle {
-  grid-column: 2 / span 11;
-  font-size: 24px;
-}
-
-.designersSectionContent {
-  grid-column: span 12;
-
-  display: flex;
-  gap: 20px;
-  align-items: flex-end;
-  justify-content: flex-start;
-  overflow-x: scroll;
-}
-
-.designersSectionContentItem {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.designersSectionContentItemImg {
-  /* width: 100%;
-  object-fit: cover; */
-}
-
-.designersSectionContentItemText {
-  font-size: 16px;
 }
 
 /* Список с пунктами главного меню */
