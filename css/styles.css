@@ -39,6 +39,7 @@
 
 .ulBasicDecoration {
   list-style-type: none;
+  margin: 0;
 }
 
 .mainMenu {
@@ -221,6 +222,97 @@
   font-size: 16px;
 }
 
+/* strongPointsSection */
+.strongPointsSection {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.strongPointsSectionTitle {
+  grid-column: 3 / 13;
+  font-size: 24px;
+  margin-left: 238px;
+}
+
+.strongPointsSectionContent {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.strongPointsSectionContentImg {
+  min-width: 335px;
+  height: 555px;
+  object-fit: cover;
+}
+
+.strongPointsSectionContentStrengths {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  min-width: 451px;
+}
+
+.strongPointsSectionContentStrengthsTitle {
+  margin: 0 auto;
+  line-height: 86px;
+}
+
+.strongPointsSectionContentStrengthsList {
+  margin: 0 auto;
+  font-family: "Bitter";
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.8px;
+}
+
+@supports (display: grid) {
+  .strongPointsSection {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+  
+  .strongPointsSectionTitle {
+    grid-column: 3 / 13;
+    font-size: 24px;
+    margin-left: 0;
+  }
+  
+  .strongPointsSectionContent {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 335px 335px 451px 335px 335px;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    overflow-x: auto;
+  }
+  
+  .strongPointsSectionContentImg {
+    width: 100%;
+    height: 555px;
+    object-fit: cover;
+  }
+  
+  .strongPointsSectionContentStrengths {
+    display: grid;
+    gap: 28px;
+  }
+  
+  .strongPointsSectionContentStrengthsTitle {
+    margin: 0 auto;
+    line-height: 86px;
+  }
+  
+  .strongPointsSectionContentStrengthsList {
+    margin: 0 auto;
+  }
+}
+
 /* Список с пунктами главного меню */
 .mainMenuList {
   display: flex;
@@ -293,11 +385,6 @@
   line-height: 21.09px;
 }
 
-/* Крупный текст в секции сильных сторон */
-.strengthsTitle {
-  line-height: 86px;
-}
-
 /* Стили для мелкого описания под карточками */
 .smallDescription {
   font-size: 16px;
@@ -338,12 +425,4 @@
   font-size: 26px;
   font-weight: 400;
   line-height: 31.2px;
-}
-
-/* Пункты из списка */
-.strengthsUnorderedList {
-  font-family: "Bitter";
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 40.8px;
 }
