@@ -24,6 +24,10 @@
 }
 
 /* Базовые стили */
+html {
+  scroll-behavior: smooth;
+}
+
 .bodyDefaultStyle {
   font-family: "Roboto";
   font-size: 24px;
@@ -51,6 +55,10 @@
   align-items: center;
 }
 
+.mainMenuMobile {
+  display: none;
+}
+
 .sectionDefault {
   margin: 150px auto;
 }
@@ -59,12 +67,77 @@
   text-transform: uppercase;
 }
 
+/* Выделяющийся заголовок в разделе */
+.mainMenu a {
+  font-weight: 500;
+  text-align: center;
+  text-decoration-style: solid;
+}
+
+/* Выделяющийся заголовок в разделе */
+.mainMenu a:hover {
+  text-decoration-line: underline;
+}
+
+/* Выделяющийся заголовок в разделе */
+.bigTitle {
+  font-family: "Playfair Display";
+  font-size: 86px;
+  font-weight: 500;
+  line-height: 103.2px;
+}
+
+/* Логотип-заголовок раздела */
+.logoInTitle {
+  text-align: center;
+  margin: 0px;
+}
+
+/* Подзаголовок под логотипом-заголовком раздела */
+.logoInTitleDescription {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23.44px;
+  text-align: center;
+  margin: 0px;
+}
+
+/* Заголовок секции со смещением вправо */
+.sectionTitleRight {
+  text-align: right;
+}
+
+/* Цитата */
+.quote {
+  font-family: "Bitter";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.2px;
+}
+
+/* Список с пунктами главного меню */
+.mainMenuList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-left: 55px;
+}
+
+.mainMenuList > a {
+  margin-left: 55px;
+}
+
+/* Логотип в header */
+.logoInHeader {
+  font-weight: 600;
+}
+
 /* heroSection */
 .heroSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 630px;
+  min-height: 630px;
   background-color: #ddd0c8;
   background-image: url('..\\images\\insideWeather.jpg');
 }
@@ -73,8 +146,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 690px;
-  height: 360px;
+  min-width: 650px;
+  padding: 110px 20px;
+  gap: 14px;
   background-color: white;
 }
 
@@ -109,6 +183,24 @@
 .biographySectionQuote {
   vertical-align: bottom;
   margin: 0;
+}
+
+.artDirectorTitle {
+  line-height: 114.64px;
+}
+
+.artDirectorTitleMobile {
+  display: none;
+}
+
+.artDirectorSubtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+}
+
+.artDirectorSubtitleMobile {
+  display: none;
 }
 
 /* testimonialsSection */
@@ -313,93 +405,18 @@
   }
 }
 
-/* Список с пунктами главного меню */
-.mainMenuList {
+/* footerSection */
+.footerSection {
+  background-color: #0D0D0D;
+  color: white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center; 
-  margin-left: 55px;
+  gap: 20px;
+  padding: 70px 20px;
 }
 
-@media (max-width: 450px) {
-  .mainMenuList {
-    display: none;
-  }
-}
-
-.mainMenuList > a {
-  margin-left: 55px;
-}
-/* Roboto */
-
-/* Выделяющийся заголовок в разделе */
-.mainMenu a {
-  font-weight: 500;
-  text-align: center;
-  text-decoration-style: solid;
-}
-
-/* Выделяющийся заголовок в разделе */
-.mainMenu a:hover {
-  text-decoration-line: underline;
-}
-
-
-/* Playfair Display */
-
-/* Выделяющийся заголовок в разделе */
-.bigTitle {
-  font-family: "Playfair Display";
-  font-size: 86px;
-  font-weight: 500;
-  line-height: 103.2px;
-}
-
-/* Логотип в header */
-.logoInHeader {
-  font-weight: 600;
-}
-
-/* Логотип-заголовок раздела */
-.logoInTitle {
-  text-align: center;
-  margin: 0px;
-}
-
-/* Подзаголовок под логотипом-заголовком раздела */
-.logoInTitleDescription {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 23.44px;
-  text-align: center;
-  margin: 0px;
-}
-
-/* Заголовок секции со смещением вправо */
-.sectionTitleRight {
-  text-align: right;
-}
-
-/* ФИО в заголовке раздела про арт-директора */
-.artDirectorTitle {
-  line-height: 114.64px;
-}
-
-/* Описание в подзаголовке раздела про арт-директора */
-.artDirectorSubtitle {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.09px;
-}
-
-/* Стили для мелкого описания под карточками */
-.smallDescription {
-  font-size: 16px;
-  line-height: 18.75px;
-}
-
-/* Контакты в футере */
-.footerContacts {
+.footerSectionContacts {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -407,29 +424,300 @@
   text-decoration-style: solid;
 }
 
-/* Лого в футере */
-.footerLogo {
+.footerSectionLogo {
   font-size: 18px;
   font-weight: 500;
   line-height: 21.09px;
   text-align: center;
 }
 
-/* Pricing в футере */
-.footerPricing {
+.footerSectionPricing {
   font-size: 16px;
   font-weight: 400;
   line-height: 18.75px;
   text-align: right;
 }
 
+@media (max-width: 900px) {
+  .sectionDefault {
+    margin: 80px auto;
+  }
 
-/* Bitter */
+  .mainMenu {
+    display: none;
+  }
 
-/* Цитата */
-.quote {
-  font-family: "Bitter";
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 31.2px;
+  .heroSection {
+    min-height: 764px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+  }
+
+  .heroSectionTitle {
+    min-width: 0px;
+    min-height: 344px;
+    width: 100%;
+    padding: 0 18px;
+    gap: 0;
+  }
+
+  .logoInTitle {
+    font-size: 70px;
+  }
+
+  .logoInTitleDescription {
+    font-size: 18px;
+  }
+
+  .biographySection {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .biographySectionTitle {
+    writing-mode: unset;
+    text-orientation: unset;
+    position: absolute;
+    right: 16px;
+  }
+
+  .biographySectionTitleText {
+    transform: none;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .biographySectionContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+  }
+
+  .biographySectionImg {
+    width: 100%;
+    height: 400px;
+    order: 1;
+  }
+
+  .artDirectorSubtitle {
+    display: none;
+  }
+
+  .artDirectorSubtitleMobile {
+    display: inline-block;
+    order: -1;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .artDirectorTitle {
+    display: none;
+  }
+
+  .artDirectorTitleMobile {
+    display: inline;
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    order: 1;
+  }
+
+  .biographySectionRectangleImg {
+    display: none;
+  }
+
+  .biographySectionQuote {
+    margin-top: 57px;
+    margin-bottom: 41px;
+    margin-right: 15px;
+    font-size: 30px;
+  }
+
+  .designersSection {
+    margin: 0;
+    gap: 32px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .designersSectionTitle {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .designersSectionContent {
+    gap: 16px;
+  }
+
+  .designersSectionContentItemImg {
+    height: 440px;
+    width: 310px;
+    object-fit: cover;
+  }
+
+  .testimonialsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 0 16px;
+  }
+
+  .testimonialsSectionTitle {
+    order: -1;
+    flex-grow: unset;
+    writing-mode: unset;
+    text-orientation: unset;
+  }
+
+  .testimonialsSectionTitleText {
+    transform: unset;
+    font-size: 18px;
+  }
+
+  .testimonialsSectionRightPart {
+    gap: 24px;
+    padding: 0;
+  }
+
+  .testimonialsSectionRightPartQuote {
+    font-size: 30px;
+    padding: 0 38px;
+  }
+
+  .testimonialsSectionRightPartImg {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+  }
+
+  .testimonialsSectionLeftPart {
+    order: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialsSectionLeftPartLinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    row-gap: 20px;
+    column-gap: 31px;
+    padding: 0;
+  }
+
+  .testimonialsSectionLeftPartLink {
+    transform: unset;
+    flex-grow: unset;
+    writing-mode: unset;
+    text-orientation: unset;
+    width: unset;
+  }
+
+  .testimonialsSectionLeftPartImg {
+    display: none;
+  }
+
+  .strongPointsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 30px;
+  }
+
+  .strongPointsSectionTitle {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .strongPointsSectionContent {
+    display: flex;
+  }
+
+  .strongPointsSectionContentStrengths {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: unset;
+    align-items: flex-start;
+  }
+
+  .strongPointsSectionContentStrengthsTitle {
+    font-size: 46px;
+    line-height: 46px;
+  }
+
+  .strongPointsSectionContentStrengthsList {
+    margin: 0;
+  }
+
+  .ulBasicDecoration {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 8px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .strongPointsSectionContentImg {
+    width: 310px;
+    height: 450px;
+  }
+
+  .mainMenuMobile {
+    display: block;
+    border: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .mainMenuMobileList {
+    display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+    padding: 0 16px;
+  }
+
+  .mainMenuMobileList > a {
+    display: inline-block;
+    width: 92px;
+    height: 82px;
+    text-align: center;
+    align-content: center;
+    font-family: "Bitter";
+    font-size: 40px;
+  }
+
+  .mainMenuMobileList > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .footerSection {
+    flex-direction: column;
+    gap: 8px;
+    padding: 30px 16px;
+    align-items: flex-start;
+  }
+
+  .footerSectionLogo {
+    order: -1;
+    align-self: end;
+  }
+
+  .footerSectionLogo > p {
+    margin: 0;
+  }
+
+  .footerSectionContacts > p {
+    margin: 0;
+  }
+
+  .footerSectionPricing > p {
+    margin: 0;
+  }
 }

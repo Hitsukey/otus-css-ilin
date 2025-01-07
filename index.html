@@ -12,10 +12,10 @@
         <nav class="mainMenu">
             <strong class="bigTitle logoInHeader">Mod</strong>
             <div class="mainMenuList">
-                <a class="aBasicDecoration" href="#">Biography</a>
-                <a class="aBasicDecoration" href="#">Designers</a>
-                <a class="aBasicDecoration" href="#">Testimonials</a>
-                <a class="aBasicDecoration" href="#">Strong points</a>
+                <a class="aBasicDecoration" href="#biographySection">Biography</a>
+                <a class="aBasicDecoration" href="#designersSection">Designers</a>
+                <a class="aBasicDecoration" href="#testimonialsSection">Testimonials</a>
+                <a class="aBasicDecoration" href="#strongPointsSection">Strong points</a>
             </div>
         </nav>
     </header>
@@ -29,7 +29,7 @@
     </section>
 
     <!-- Biography section -->
-    <section class="sectionDefault biographySection">
+    <section id="biographySection" class="sectionDefault biographySection">
         <img class="biographySectionImg" src="images\jaredWeiss.jpg" alt="jaredWeiss">
             
         <div class="biographySectionTitle">
@@ -42,17 +42,21 @@
                 <b>Katya<br>Mills</b>
             </p>
 
+            <p class="bigTitle artDirectorTitleMobile">-Katya Mills</p>
+
             <p class="artDirectorSubtitle">Art Director<br>Scenography / Styling / Creative Photography / Design</p>
             
+            <p class="artDirectorSubtitleMobile">Art Director<br>- Scenography<br>- Styling<br>- Creative Photography<br>- Design</p>
+            
             <div>
-                <img src="images\rectangle.jpg" alt="rectangle">
+                <img class="biographySectionRectangleImg" src="images\rectangle.jpg" alt="rectangle">
                 <blockquote class="quote biographySectionQuote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
             </div>
         </div>
     </section>
     
     <!-- Designers section -->
-    <section class="sectionDefault designersSection">
+    <section id="designersSection" class="sectionDefault designersSection">
         <h2 class="designersSectionTitle">Designers</h2>
         
         <div class="designersSectionContent">
@@ -107,7 +111,7 @@
     </section>
 
     <!-- Testimonials section -->
-    <section class="sectionDefault testimonialsSection">
+    <section id="testimonialsSection" class="sectionDefault testimonialsSection">
         <div class="testimonialsSectionLeftPart">
             <div class="testimonialsSectionLeftPartLinks">
                 <div class="testimonialsSectionLeftPartLink">
@@ -138,12 +142,12 @@
 
         <div class="testimonialsSectionRightPart">
             <blockquote class="testimonialsSectionRightPartQuote">I just really want to do good work and work with some great people, people who challenge me.</blockquote>
-            <img src="images\sinittaLeunen.jpg" alt="sinittaLeunen">
+            <img class="testimonialsSectionRightPartImg" src="images\sinittaLeunen.jpg" alt="sinittaLeunen">
         </div>
     </section>
 
     <!-- Strong points section -->
-    <section class="sectionDefault strongPointsSection">
+    <section id="strongPointsSection" class="sectionDefault strongPointsSection">
         <h2 class="strongPointsSectionTitle">Strong points</h2>
         <div class="strongPointsSectionContent">
             <img class="strongPointsSectionContentImg" src="images\dawidLiberadzki.jpg" alt="dawidLiberadzki">
@@ -172,16 +176,25 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footerContacts">
-            <p>+7 921 123-45-67</p>
-            <p>info@modstudio.com</p>
+    <!-- mainMenuMobile -->
+    <nav class="sectionDefault mainMenuMobile">
+        <div class="mainMenuMobileList">
+            <a class="aBasicDecoration" href="#biographySection">B</a>
+            <a class="aBasicDecoration" href="#designersSection">D</a>
+            <a class="aBasicDecoration" href="#testimonialsSection">T</a>
+            <a class="aBasicDecoration" href="#strongPointsSection">S</a>
         </div>
-        <div class="footerLogo">
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footerSection">
+        <div class="footerSectionContacts">
+            <p>+7 921 123-45-67<br>INFO@MODSTUDIO.COM</p>
+        </div>
+        <div class="footerSectionLogo">
             <p>A product of <strong>MOD</strong></p>
         </div>
-        <div class="footerPricing">
+        <div class="footerSectionPricing">
             <p>© 2023 Mod Media. All rights reserved</p>
         </div>
     </footer>
