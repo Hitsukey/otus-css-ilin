@@ -1,0 +1,41 @@
+.main-menu-mobile {
+    margin: $section-margin;
+    display: none;
+}
+
+.main-menu-mobile__list-item {
+    text-decoration-line: none;
+    color: black;
+}
+
+@media (max-width: $max-width-mobile) {
+    .main-menu-mobile {
+        margin: $section-margin-mobile;
+        display: block;
+        border: 2px solid black;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .main-menu-mobile__list {
+        display: flex;
+        gap: 16px;
+        justify-content: space-evenly;
+        padding: 0 16px;
+    }
+
+    .main-menu-mobile__list-item {
+        display: inline-block;
+        width: 92px;
+        height: 82px;
+        text-align: center;
+        align-content: center;
+        font-family: "Bitter";
+        font-size: 40px;
+    }
+    
+    .main-menu-mobile__list-item:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,24 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Regular"),
+    url("/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: local("Bitter Regular"),
+    url("/fonts/Bitter/Bitter-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+  
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay Regular"),
+    url("/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}

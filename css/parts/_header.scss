@@ -1,0 +1,38 @@
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 135px;
+    padding-left: 23px;
+    padding-right: 20px;
+}
+
+.main-menu__logo {
+    @include txt("Playfair Display", 86px, 600, 103.2px);
+}
+
+.main-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu__main-menu-list {
+    margin-left: 55px;
+}
+
+.main-menu-list__item {
+    text-decoration-line: none;
+    color: black;
+    margin-left: 55px;
+}
+
+.main-menu-list__item:hover {
+    text-decoration-line: underline;
+}
+
+@media (max-width: $max-width-mobile) {
+    .main-menu {
+        display: none;
+    }
+}

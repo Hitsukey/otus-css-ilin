@@ -1,0 +1,10 @@
+/* Базовые стили */
+html {
+    scroll-behavior: smooth;
+}
+
+.body-default-style {
+    @include txt("Roboto", 24px, 400, 28.13px);
+    max-width: $body-max-width;
+    margin: 0 auto;
+}

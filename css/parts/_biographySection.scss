@@ -1,0 +1,117 @@
+.biography-section {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 80%;
+    margin: $section-margin;
+}
+
+.biography-section__img {
+    width: 49%;
+    object-fit: cover;
+}
+
+.biography-section__title-container {
+    flex-grow: 1;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.biography-section__title-text {
+    transform: rotate(-180deg);
+    text-align: right;
+    font-size: 24px;
+}
+
+.biography-section__content {
+    width: 39%;
+}
+
+.biography-section__content-title {
+    @include txt("Playfair Display", 86px, 500, 114.64px);
+}
+
+.biography-section__content-title-mobile {
+    display: none;
+    @include txt("Playfair Display", 86px, 500, 103.2px);
+}
+
+.biography-section__content-subtitle {
+    @include txt("Roboto", 18px, 500, 21.09px);
+}
+
+.biography-section__content-subtitle-mobile {
+    display: none;
+}
+
+.biography-section__content-quote {
+    @include txt("Bitter", 26px, 400, 31.2px);
+    vertical-align: bottom;
+    margin: 0;
+}
+
+@media (max-width: $max-width-mobile) {
+    .biography-section {
+        flex-direction: column;
+        max-width: 100%;
+        margin: $section-margin-mobile;
+    }
+    
+    .biography-section__img {
+        width: 100%;
+        height: 400px;
+        order: 1;
+    }
+
+    .biography-section__title-container {
+        writing-mode: unset;
+        text-orientation: unset;
+        position: absolute;
+        right: 16px;
+    }
+    
+    .biography-section__title-text {
+        transform: none;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .biography-section__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 18px;
+    }
+
+    .biography-section__content-title {
+        display: none;
+    }
+
+    .biography-section__content-title-mobile {
+        display: inline;
+        font-size: 64px;
+        margin-top: 0;
+        margin-bottom: 35px;
+        order: 1;
+    }
+
+    .biography-section__content-subtitle {
+        display: none;
+    }
+
+    .biography-section__content-subtitle-mobile {
+        display: inline-block;
+        order: -1;
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .biography-section__content-rectangle-img {
+        display: none;
+    }
+
+    .biography-section__content-quote {
+        margin: 57px 15px 41px 0;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,48 @@
+.footer-section {
+    background-color: #0D0D0D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 70px 20px;
+}
+
+.footer-section__contacts {
+    @include txt("Roboto", 16px, 400, 26px);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.footer-section__logo {
+    @include txt("Roboto", 18px, 500, 21.09px);
+    text-align: center;
+}
+
+.footer-section__pricing {
+    @include txt("Roboto", 16px, 400, 18.75px);
+    text-align: right;
+}
+
+@media (max-width: $max-width-mobile) {
+    .footer-section {
+        flex-direction: column;
+        gap: 8px;
+        padding: 30px 16px;
+        align-items: flex-start;
+    }
+
+    .footer-section__contacts {
+        margin: 0;
+    }
+
+    .footer-section__logo {
+        order: -1;
+        align-self: end;
+        margin: 0;
+    }
+
+    .footer-section__pricing {
+        margin: 0;
+    }
+}

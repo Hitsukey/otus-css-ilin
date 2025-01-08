@@ -6,65 +6,59 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Учебный проект</title>
 </head>
-<body class="bodyDefaultStyle">
+<body class="body-default-style">
     <!-- Header -->
     <header>
-        <nav class="mainMenu">
-            <strong class="bigTitle logoInHeader">Mod</strong>
-            <div class="mainMenuList">
-                <a class="aBasicDecoration" href="#biographySection">Biography</a>
-                <a class="aBasicDecoration" href="#designersSection">Designers</a>
-                <a class="aBasicDecoration" href="#testimonialsSection">Testimonials</a>
-                <a class="aBasicDecoration" href="#strongPointsSection">Strong points</a>
+        <nav class="main-menu">
+            <strong class="main-menu__logo">Mod</strong>
+            <div class="main-menu-list main-menu__main-menu-list">
+                <a class="main-menu-list__item" href="#biographySection">Biography</a>
+                <a class="main-menu-list__item" href="#designersSection">Designers</a>
+                <a class="main-menu-list__item" href="#testimonialsSection">Testimonials</a>
+                <a class="main-menu-list__item" href="#strongPointsSection">Strong points</a>
             </div>
         </nav>
     </header>
 
     <!-- Hero section -->
-    <section class="heroSection">
-        <div class="heroSectionTitle">
-            <h1 class="bigTitle logoInTitle"><strong>Mod Studio</strong></h1>
-            <h2 class="logoInTitleDescription">Modern Web Studio</h2>
+    <section class="hero-section">
+        <div class="hero-section__container">
+            <h1 class="hero-section__title"><strong>Mod Studio</strong></h1>
+            <h2 class="hero-section__description">Modern Web Studio</h2>
         </div>
     </section>
 
     <!-- Biography section -->
-    <section id="biographySection" class="sectionDefault biographySection">
-        <img class="biographySectionImg" src="images\jaredWeiss.jpg" alt="jaredWeiss">
-            
-        <div class="biographySectionTitle">
-            <h2 class="biographySectionTitleText sectionTitleRight">Biography</h2>
+    <section id="biographySection" class="biography-section">
+        <img class="biography-section__img" src="images\jaredWeiss.jpg" alt="jaredWeiss">
+        
+        <div class="biography-section__title-container">
+            <h2 class="biography-section__title-text">Biography</h2>
         </div>
-            
-        <div class="biographySectionContent">
-            
-            <p class="bigTitle artDirectorTitle">
-                <b>Katya<br>Mills</b>
-            </p>
 
-            <p class="bigTitle artDirectorTitleMobile">-Katya Mills</p>
-
-            <p class="artDirectorSubtitle">Art Director<br>Scenography / Styling / Creative Photography / Design</p>
-            
-            <p class="artDirectorSubtitleMobile">Art Director<br>- Scenography<br>- Styling<br>- Creative Photography<br>- Design</p>
+        <div class="biography-section__content">
+            <p class="biography-section__content-title"><b>Katya<br>Mills</b></p>
+            <p class="biography-section__content-title-mobile">-Katya Mills</p>
+            <p class="biography-section__content-subtitle">Art Director<br>Scenography / Styling / Creative Photography / Design</p>
+            <p class="biography-section__content-subtitle-mobile">Art Director<br>- Scenography<br>- Styling<br>- Creative Photography<br>- Design</p>
             
             <div>
-                <img class="biographySectionRectangleImg" src="images\rectangle.jpg" alt="rectangle">
-                <blockquote class="quote biographySectionQuote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
+                <img class="biography-section__content-rectangle-img" src="images\rectangle.jpg" alt="rectangle">
+                <blockquote class="biography-section__content-quote">“The more I deal with the work as something that is my own, as something that is personal, the more successful it is.”</blockquote>
             </div>
         </div>
     </section>
     
     <!-- Designers section -->
-    <section id="designersSection" class="sectionDefault designersSection">
-        <h2 class="designersSectionTitle">Designers</h2>
+    <section id="designersSection" class="designers-section">
+        <h2 class="designers-section__title">Designers</h2>
         
-        <div class="designersSectionContent">
-            <div class="designersSectionContentItem">
-                <img class="designersSectionContentItemImg" src="images\spurwingAgency.jpg" alt="spurwingAgency">
+        <div class="designers-section__cards">
+            <div class="designers-section__cards-item">
+                <img class="designers-section__cards-item-img" src="images\spurwingAgency.jpg" alt="spurwingAgency">
                 
-                <div class="designersSectionContentItemText">
-                    <b class="uppercaseText">Jess Wonder</b>
+                <div class="designers-section__cards-item-text">
+                    <b class="designers-section__cards-item-text-title">Jess Wonder</b>
                     <br>
                     <b>From/</b> Be more flower
                     <br>
@@ -72,11 +66,11 @@
                 </div>
             </div>
             
-            <div class="designersSectionContentItem">
-                <img class="designersSectionContentItemImg" src="images\stil1.jpg" alt="stil1">
+            <div class="designers-section__cards-item">
+                <img class="designers-section__cards-item-img" src="images\stil1.jpg" alt="stil1">
 
-                <div class="designersSectionContentItemText">
-                    <b class="uppercaseText">Kameron Clein</b>
+                <div class="designers-section__cards-item-text">
+                    <b class="designers-section__cards-item-text-title">Kameron Clein</b>
                     <br>
                     <b>From/</b> Be more flower
                     <br>
@@ -84,11 +78,11 @@
                 </div>
             </div>
             
-            <div class="designersSectionContentItem">
-                <img class="designersSectionContentItemImg" src="images\stil2.jpg" alt="stil2">
+            <div class="designers-section__cards-item">
+                <img class="designers-section__cards-item-img" src="images\stil2.jpg" alt="stil2">
 
-                <div class="designersSectionContentItemText">
-                    <b class="uppercaseText">LOUISSE RED</b>
+                <div class="designers-section__cards-item-text">
+                    <b class="designers-section__cards-item-text-title">LOUISSE RED</b>
                     <br>
                     <b>From/</b> Be more flower
                     <br>
@@ -96,11 +90,11 @@
                 </div>
             </div>
             
-            <div class="designersSectionContentItem">
-                <img class="designersSectionContentItemImg" src="images\stil1.jpg" alt="stil1">
+            <div class="designers-section__cards-item">
+                <img class="designers-section__cards-item-img" src="images\stil1.jpg" alt="stil1">
                 
-                <div class="designersSectionContentItemText">
-                    <b class="uppercaseText">Kameron Clein</b>
+                <div class="designers-section__cards-item-text">
+                    <b class="designers-section__cards-item-text-title">Kameron Clein</b>
                     <br>
                     <b>From/</b> Be more flower
                     <br>
@@ -111,52 +105,52 @@
     </section>
 
     <!-- Testimonials section -->
-    <section id="testimonialsSection" class="sectionDefault testimonialsSection">
-        <div class="testimonialsSectionLeftPart">
-            <div class="testimonialsSectionLeftPartLinks">
-                <div class="testimonialsSectionLeftPartLink">
+    <section id="testimonialsSection" class="testimonials-section">
+        <div class="testimonials-section__links-container">
+            <div class="testimonials-section__links-container-items">
+                <div class="testimonials-section__links-container-items-link-container">
                     <b>Website</b>
                     <br>
-                    <a href="www.whitepapers.com" class="aBasicDecoration">www.whitepapers.com</a>
+                    <a href="www.whitepapers.com" class="testimonials-section__links-container-items-link-a">www.whitepapers.com</a>
                 </div>
 
-                <div class="testimonialsSectionLeftPartLink">
+                <div class="testimonials-section__links-container-items-link-container">
                     <b>Creativity</b>
                     <br>
-                    <a href="www.whitepapers.com" class="aBasicDecoration">www.whitepapers.com</a>
+                    <a href="www.whitepapers.com" class="testimonials-section__links-container-items-link-a">www.whitepapers.com</a>
                 </div>
 
-                <div class="testimonialsSectionLeftPartLink">
+                <div class="testimonials-section__links-container-items-link-container">
                     <b>Creativity</b>
                     <br>
-                    <a href="www.whitepapers.com" class="aBasicDecoration">www.whitepapers.com</a>
+                    <a href="www.whitepapers.com" class="testimonials-section__links-container-items-link-a">www.whitepapers.com</a>
                 </div>
             </div>
             
-            <img class="testimonialsSectionLeftPartImg" src="images\keghanCrossland1.jpg" alt="keghanCrossland1">
+            <img class="testimonials-section__links-container-img" src="images\keghanCrossland1.jpg" alt="keghanCrossland1">
         </div>
         
-        <div class="testimonialsSectionTitle">
-            <h2 class="testimonialsSectionTitleText sectionTitleRight">Testimonials</h2>
+        <div class="testimonials-section__title-container">
+            <h2 class="testimonials-section__title-text">Testimonials</h2>
         </div>
 
-        <div class="testimonialsSectionRightPart">
-            <blockquote class="testimonialsSectionRightPartQuote">I just really want to do good work and work with some great people, people who challenge me.</blockquote>
-            <img class="testimonialsSectionRightPartImg" src="images\sinittaLeunen.jpg" alt="sinittaLeunen">
+        <div class="testimonials-section__quote-container">
+            <blockquote class="testimonials-section__quote-container-text">I just really want to do good work and work with some great people, people who challenge me.</blockquote>
+            <img class="testimonials-section__quote-container-img" src="images\sinittaLeunen.jpg" alt="sinittaLeunen">
         </div>
     </section>
 
     <!-- Strong points section -->
-    <section id="strongPointsSection" class="sectionDefault strongPointsSection">
-        <h2 class="strongPointsSectionTitle">Strong points</h2>
-        <div class="strongPointsSectionContent">
-            <img class="strongPointsSectionContentImg" src="images\dawidLiberadzki.jpg" alt="dawidLiberadzki">
-            <img class="strongPointsSectionContentImg" src="images\averyKlein1.jpg" alt="averyKlein1">
+    <section id="strongPointsSection" class="strong-points-section">
+        <h2 class="strong-points-section__title">Strong points</h2>
+        <div class="strong-points-section__content">
+            <img class="strong-points-section__content-img" src="images\dawidLiberadzki.jpg" alt="dawidLiberadzki">
+            <img class="strong-points-section__content-img" src="images\averyKlein1.jpg" alt="averyKlein1">
             
-            <div class="strongPointsSectionContentStrengths">
-                <p class="bigTitle strongPointsSectionContentStrengthsTitle">Strengths</p>
-                <div class="strongPointsSectionContentStrengthsList">
-                    <ul class="ulBasicDecoration">
+            <div class="strong-points-section__content-strengths">
+                <p class="strong-points-section__content-strengths-title">Strengths</p>
+                <div class="strong-points-section__content-strengths-list-container">
+                    <ul class="strong-points-section__content-strengths-list">
                         <li>Interiors</li>
                         <li>Outdoors</li>
                         <li>Portraits</li>
@@ -171,32 +165,26 @@
                 </div>
             </div>
             
-            <img class="strongPointsSectionContentImg" src="images\keghanCrossland2.jpg" alt="keghanCrossland2">
-            <img class="strongPointsSectionContentImg" src="images\averyKlein1.jpg" alt="averyKlein2">
+            <img class="strong-points-section__content-img" src="images\keghanCrossland2.jpg" alt="keghanCrossland2">
+            <img class="strong-points-section__content-img" src="images\averyKlein1.jpg" alt="averyKlein2">
         </div>
     </section>
 
-    <!-- mainMenuMobile -->
-    <nav class="sectionDefault mainMenuMobile">
-        <div class="mainMenuMobileList">
-            <a class="aBasicDecoration" href="#biographySection">B</a>
-            <a class="aBasicDecoration" href="#designersSection">D</a>
-            <a class="aBasicDecoration" href="#testimonialsSection">T</a>
-            <a class="aBasicDecoration" href="#strongPointsSection">S</a>
+    <!-- MainMenuMobile -->
+    <nav class="main-menu-mobile">
+        <div class="main-menu-mobile__list">
+            <a class="main-menu-mobile__list-item" href="#biographySection">B</a>
+            <a class="main-menu-mobile__list-item" href="#designersSection">D</a>
+            <a class="main-menu-mobile__list-item" href="#testimonialsSection">T</a>
+            <a class="main-menu-mobile__list-item" href="#strongPointsSection">S</a>
         </div>
     </nav>
 
     <!-- Footer -->
-    <footer class="footerSection">
-        <div class="footerSectionContacts">
-            <p>+7 921 123-45-67<br>INFO@MODSTUDIO.COM</p>
-        </div>
-        <div class="footerSectionLogo">
-            <p>A product of <strong>MOD</strong></p>
-        </div>
-        <div class="footerSectionPricing">
-            <p>© 2023 Mod Media. All rights reserved</p>
-        </div>
+    <footer class="footer-section">
+        <p class="footer-section__contacts">+7 921 123-45-67<br>INFO@MODSTUDIO.COM</p>
+        <p class="footer-section__logo">A product of <strong>MOD</strong></p>
+        <p class="footer-section__pricing">© 2023 Mod Media. All rights reserved</p>
     </footer>
 </body>
 </html>

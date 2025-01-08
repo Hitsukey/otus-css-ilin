@@ -1,0 +1,56 @@
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 630px;
+    background-color: #ddd0c8;
+    background-image: url('..\\images\\insideWeather.jpg');
+}
+
+.hero-section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 650px;
+    padding: 110px 20px;
+    gap: 14px;
+    background-color: white;
+    text-align: center;
+
+}
+
+.hero-section__title {
+    @include txt("Playfair Display", 86px, 500, 103.2px);
+    margin: 0;
+}
+
+.hero-section__description {
+    @include txt("Roboto", 20px, 500, 23.44px);
+    margin: 0;
+}
+
+@media (max-width: $max-width-mobile) {
+    .hero-section {
+        min-height: 764px;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-section__container {
+        min-width: 0px;
+        min-height: 344px;
+        width: 100%;
+        padding: 0 18px;
+        gap: 0;
+    }
+
+    .hero-section__title {
+        font-size: 70px;
+    }
+
+    .hero-section__description {
+        font-size: 18px;
+    }
+}
