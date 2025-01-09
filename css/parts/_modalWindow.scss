@@ -2,16 +2,6 @@
     overflow: hidden;
 }
 
-.modal__title {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.modal__content {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .main-menu__modal-btn {
     margin-left: 55px;
 }
@@ -44,4 +34,61 @@
         justify-content: space-between;
         margin-bottom: 16px;
     }
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+}
+
+.modal__title {
+    @include txt("Roboto", 24px, 700, 28px);
+}
+
+.modal__description {
+    @include txt("Roboto", 18px, 400, 21px);
+}
+
+.input-fld {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.input-fld__label {
+    @include txt("Roboto", 18px, 500, 21px);
+}
+
+.input-fld__input {
+    @include inputFieldStyles;
+    min-height: 42px;
+}
+
+.input-fld__textarea {
+    @include inputFieldStyles;
+    min-height: 135px;
+    resize: none;
+}
+
+.modal__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal__close-btn {
+    @include defaultButtonStyles;
+    background-color: white;
+    color: black;
+}
+
+.modal__submit-btn {
+    @include defaultButtonStyles;
+    background-color: black;
+    color: white;
 }
