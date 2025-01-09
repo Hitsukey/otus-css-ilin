@@ -54,10 +54,6 @@ html {
   align-items: center;
 }
 
-.main-menu__main-menu-list {
-  margin-left: 55px;
-}
-
 .main-menu-list__item {
   text-decoration-line: none;
   color: black;
@@ -68,7 +64,7 @@ html {
   text-decoration-line: underline;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .main-menu {
     display: none;
   }
@@ -109,7 +105,7 @@ html {
   margin: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .hero-section {
     min-height: 764px;
     flex-direction: column;
@@ -195,7 +191,7 @@ html {
   margin: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .biography-section {
     flex-direction: column;
     max-width: 100%;
@@ -287,7 +283,7 @@ html {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .designers-section {
     margin: 0;
     gap: 32px;
@@ -388,7 +384,7 @@ html {
   text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .testimonials-section {
     margin: 80px auto;
     display: flex;
@@ -537,7 +533,7 @@ html {
     margin: 0 auto;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .strong-points-section {
     margin: 80px auto;
     display: flex;
@@ -590,7 +586,7 @@ html {
   color: black;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .main-menu-mobile {
     margin: 80px auto;
     display: block;
@@ -653,7 +649,7 @@ html {
   text-align: right;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .footer-section {
     flex-direction: column;
     gap: 8px;
@@ -671,4 +667,48 @@ html {
   .footer-section__pricing {
     margin: 0;
   }
+}
+.body--scroll-locked {
+  overflow: hidden;
+}
+
+.modal__title {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.modal__content {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-menu__modal-btn {
+  margin-left: 55px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(69, 90, 100, 0.5882352941);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal--closed {
+  display: none;
+}
+.modal__container {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }/*# sourceMappingURL=styles.css.map */

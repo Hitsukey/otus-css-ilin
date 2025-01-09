@@ -16,9 +16,23 @@
                 <a class="main-menu-list__item" href="#designersSection">Designers</a>
                 <a class="main-menu-list__item" href="#testimonialsSection">Testimonials</a>
                 <a class="main-menu-list__item" href="#strongPointsSection">Strong points</a>
+
+                <button class="main-menu__modal-btn" id="modalTrigger" type="button">modal</button>
             </div>
         </nav>
     </header>
+
+    <!-- Modal window -->
+    <div class="modal modal--closed" id="modalWindow">
+        <!--   modal--closed   -->
+        <div class="modal__container">
+            <header class="modal__header">
+                <h2 class="modal__title">Modal Title</h2>
+                <button class="modal__close-btn" id="modalWindowClose">X</button>
+            </header>
+            <p class="modal__content">modal content</p>
+        </div>
+    </div>
 
     <!-- Hero section -->
     <section class="hero-section">
@@ -186,5 +200,8 @@
         <p class="footer-section__logo">A product of <strong>MOD</strong></p>
         <p class="footer-section__pricing">© 2023 Mod Media. All rights reserved</p>
     </footer>
+
+    
+    <script src="js/scripts.js"></script>
 </body>
 </html>
