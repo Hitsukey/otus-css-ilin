@@ -9,9 +9,11 @@
     @include txt("Roboto", 16px, 400, 19px);
     box-sizing: border-box;
     padding: 6px 10px;
+    padding-right: calc($inputFieldIconHeight + $inputFieldIconPaddingRight * 2);
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 8px;
+    height: $inputFieldIconHeight;
 }
 
 @mixin defaultButtonStyles {
@@ -20,4 +22,11 @@
     min-height: 55.45px;
     border: 2px solid black;
     border-radius: 8px;
+}
+
+@mixin defaultFieldIcon($url) {
+    background-image: $url;
+    background-size: $inputFieldIconHeight;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - $inputFieldIconPaddingRight);
 }
