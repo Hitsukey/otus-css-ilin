@@ -25,13 +25,28 @@
     <!-- Modal window -->
     <div class="modal modal--closed" id="modalWindow">
         <!--   modal--closed   -->
-        <div class="modal__container">
-            <header class="modal__header">
-                <h2 class="modal__title">Modal Title</h2>
-                <button class="modal__close-btn" id="modalWindowClose">X</button>
-            </header>
-            <p class="modal__content">modal content</p>
-        </div>
+        <form action="index.html" method="get">
+            <div class="modal__container">
+                <div class="modal__title">Get in touch</div>
+                <div class="modal__description">Do you have any questions? Have something to say?<br>Don't be shy, write to us:</div>
+                <div class="input-fld modal__input-fld">
+                    <label for="inputName" class="input-fld__label">Name</label>
+                    <input type="text" id="inputName" class="input-fld__input" placeholder="3+ Characters" minlength="3" required>
+                </div>
+                <div class="input-fld modal__input-fld">
+                    <label for="inputEmail" class="input-fld__label">E-mail</label>
+                    <input type="email" id="inputEmail" class="input-fld__input" placeholder="name@email.com" required>
+                </div>
+                <div class="input-fld modal__input-fld">
+                    <label for="inputComment" class="input-fld__label">Comment</label>
+                    <textarea id="inputComment" class="input-fld__textarea" placeholder="Some text..." required></textarea>
+                </div>
+                <div class="modal__buttons">
+                    <button class="modal__close-btn" id="modalWindowClose">Cancel</button>
+                    <button type="submit" class="modal__submit-btn">+ Send</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- Hero section -->
