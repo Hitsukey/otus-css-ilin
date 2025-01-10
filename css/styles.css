@@ -320,6 +320,13 @@
   align-items: center; 
   margin-left: 55px;
 }
+
+@media (max-width: 450px) {
+  .mainMenuList {
+    display: none;
+  }
+}
+
 .mainMenuList > a {
   margin-left: 55px;
 }
