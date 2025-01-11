@@ -13,11 +13,12 @@
     padding: 10px;
     font-size: 24px;
     cursor: pointer;
-}
+    transition: transform 300ms, background-color 300ms;
 
-.main-menu__modal-btn:hover {
-    
-    background-color: #585757;
+    &:hover {
+        background-color: #585757;
+        transform: scale(1.06);
+    }
 }
 
 .main-menu__modal-btn::before {
@@ -85,6 +86,7 @@
 .input-fld__input {
     @include inputFieldStyles;
     min-height: 42px;
+    transition: transform 300ms, background-color 300ms, border-color 300ms;
 
     &:invalid {
         border-color: red;
@@ -97,6 +99,11 @@
     &:hover {
         border-color: black;
         background-color: rgb(255, 251, 246);
+        transform: scale(1.05);
+    }
+
+    &:focus-visible {
+        background-color: rgb(255, 251, 246);
     }
 }
 
@@ -104,6 +111,7 @@
     @include inputFieldStyles;
     min-height: 135px;
     resize: none;
+    transition: transform 300ms, background-color 300ms, border-color 300ms;
 
     &:invalid {
         border-color: red;
@@ -115,6 +123,11 @@
 
     &:hover {
         border-color: black;
+        background-color: rgb(255, 251, 246);
+        transform: scale(1.05);
+    }
+
+    &:focus-visible {
         background-color: rgb(255, 251, 246);
     }
 }
@@ -132,9 +145,11 @@
     background-color: white;
     color: black;
     cursor: pointer;
+    transition: transform 300ms, background-color 300ms;
 
     &:hover {
         background-color: rgb(240, 240, 240);
+        transform: scale(1.06);
     }
 }
 
@@ -143,9 +158,11 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: transform 300ms, background-color 300ms;
     
     &:hover {
         background-color: rgb(58, 58, 58);
+        transform: scale(1.06);
     }
 
     &::before {

@@ -683,10 +683,11 @@ html {
   padding: 10px;
   font-size: 24px;
   cursor: pointer;
+  transition: transform 300ms, background-color 300ms;
 }
-
 .main-menu__modal-btn:hover {
   background-color: #585757;
+  transform: scale(1.06);
 }
 
 .main-menu__modal-btn::before {
@@ -770,6 +771,7 @@ html {
   border-radius: 8px;
   height: 50px;
   min-height: 42px;
+  transition: transform 300ms, background-color 300ms, border-color 300ms;
 }
 .input-fld__input:invalid {
   border-color: red;
@@ -779,6 +781,10 @@ html {
 }
 .input-fld__input:hover {
   border-color: black;
+  background-color: rgb(255, 251, 246);
+  transform: scale(1.05);
+}
+.input-fld__input:focus-visible {
   background-color: rgb(255, 251, 246);
 }
 
@@ -796,6 +802,7 @@ html {
   height: 50px;
   min-height: 135px;
   resize: none;
+  transition: transform 300ms, background-color 300ms, border-color 300ms;
 }
 .input-fld__textarea:invalid {
   border-color: red;
@@ -805,6 +812,10 @@ html {
 }
 .input-fld__textarea:hover {
   border-color: black;
+  background-color: rgb(255, 251, 246);
+  transform: scale(1.05);
+}
+.input-fld__textarea:focus-visible {
   background-color: rgb(255, 251, 246);
 }
 
@@ -828,9 +839,11 @@ html {
   background-color: white;
   color: black;
   cursor: pointer;
+  transition: transform 300ms, background-color 300ms;
 }
 .modal__close-btn:hover {
   background-color: rgb(240, 240, 240);
+  transform: scale(1.06);
 }
 
 .modal__submit-btn {
@@ -845,9 +858,11 @@ html {
   background-color: black;
   color: white;
   cursor: pointer;
+  transition: transform 300ms, background-color 300ms;
 }
 .modal__submit-btn:hover {
   background-color: rgb(58, 58, 58);
+  transform: scale(1.06);
 }
 .modal__submit-btn::before {
   content: "+";
