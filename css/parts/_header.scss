@@ -15,12 +15,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 55px;
 }
 
 .main-menu-list__item {
     text-decoration-line: none;
     color: black;
-    margin-left: 55px;
 }
 
 .main-menu-list__item:hover {
