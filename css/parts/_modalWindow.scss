@@ -3,7 +3,6 @@
 }
 
 .main-menu__modal-btn {
-    margin-left: 55px;
     background-color: #313131;
     color: white;
     border: none;
@@ -13,11 +12,12 @@
     padding: 10px;
     font-size: 24px;
     cursor: pointer;
-}
+    transition: transform 300ms, background-color 300ms;
 
-.main-menu__modal-btn:hover {
-    
-    background-color: #585757;
+    &:hover {
+        background-color: #585757;
+        transform: scale(1.06);
+    }
 }
 
 .main-menu__modal-btn::before {
@@ -41,14 +41,6 @@
         display: none;
     }
     
-    &__container {
-        background-color: #fff;
-        padding: 16px;
-        border-radius: 8px;
-        max-width: 500px;
-        width: 100%;
-    }
-    
     &__header {
         display: flex;
         justify-content: space-between;
@@ -57,10 +49,32 @@
 }
 
 .modal__container {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding: 20px;
+    position: relative;
+    
+    &:before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        position: absolute;
+        border-color: white;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 2px;
+        transform: rotate(2deg);
+        z-index: -1;
+        
+    }
 }
 
 .modal__title {
@@ -85,6 +99,7 @@
 .input-fld__input {
     @include inputFieldStyles;
     min-height: 42px;
+    transition: transform 300ms, background-color 300ms, border-color 300ms;
 
     &:invalid {
         border-color: red;
@@ -97,6 +112,11 @@
     &:hover {
         border-color: black;
         background-color: rgb(255, 251, 246);
+        transform: scale(1.05);
+    }
+
+    &:focus-visible {
+        background-color: rgb(255, 251, 246);
     }
 }
 
@@ -104,6 +124,7 @@
     @include inputFieldStyles;
     min-height: 135px;
     resize: none;
+    transition: transform 300ms, background-color 300ms, border-color 300ms;
 
     &:invalid {
         border-color: red;
@@ -115,6 +136,11 @@
 
     &:hover {
         border-color: black;
+        background-color: rgb(255, 251, 246);
+        transform: scale(1.05);
+    }
+
+    &:focus-visible {
         background-color: rgb(255, 251, 246);
     }
 }
@@ -132,9 +158,11 @@
     background-color: white;
     color: black;
     cursor: pointer;
+    transition: transform 300ms, background-color 300ms;
 
     &:hover {
         background-color: rgb(240, 240, 240);
+        transform: scale(1.06);
     }
 }
 
@@ -143,9 +171,11 @@
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: transform 300ms, background-color 300ms;
     
     &:hover {
         background-color: rgb(58, 58, 58);
+        transform: scale(1.06);
     }
 
     &::before {
