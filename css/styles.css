@@ -704,6 +704,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .modal--closed {
   display: none;
@@ -770,6 +771,16 @@ html {
   height: 50px;
   min-height: 42px;
 }
+.input-fld__input:invalid {
+  border-color: red;
+}
+.input-fld__input:valid {
+  border-color: green;
+}
+.input-fld__input:hover {
+  border-color: black;
+  background-color: rgb(255, 251, 246);
+}
 
 .input-fld__textarea {
   font-family: "Roboto";
@@ -785,6 +796,16 @@ html {
   height: 50px;
   min-height: 135px;
   resize: none;
+}
+.input-fld__textarea:invalid {
+  border-color: red;
+}
+.input-fld__textarea:valid {
+  border-color: green;
+}
+.input-fld__textarea:hover {
+  border-color: black;
+  background-color: rgb(255, 251, 246);
 }
 
 .modal__buttons {
@@ -808,6 +829,9 @@ html {
   color: black;
   cursor: pointer;
 }
+.modal__close-btn:hover {
+  background-color: rgb(240, 240, 240);
+}
 
 .modal__submit-btn {
   font-family: "Roboto";
@@ -822,7 +846,9 @@ html {
   color: white;
   cursor: pointer;
 }
-
+.modal__submit-btn:hover {
+  background-color: rgb(58, 58, 58);
+}
 .modal__submit-btn::before {
   content: "+";
   font-family: "FontAwesome";
